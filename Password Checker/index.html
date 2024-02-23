@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Tony Tran - Password Checker</title>
+</head>
+<body>
+    <div class ="header1">
+      <h2>Password Checker</h2>
+    </div>
+    
+    <div class="group"> 
+        <label for="">Password</label> 
+        <input type="text" 
+               id="password"
+               placeholder="Type your password here" /> 
+        <label for=""> 
+              Strength of password 
+          </label> 
+        <div class="power-container"> 
+            <div id="power-point"></div> 
+        </div> 
+    </div> 
+    
+    <div class="header2">
+        <h2>Password Validation</h2>
+    </div>
+    <div class="container">
+        <form>
+          <label for="psw">Password</label>
+          <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        </form>
+      </div>
+      
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+    <div class = "footer">
+      <p>By. Tony Tran</p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
