@@ -1,4 +1,5 @@
 // script.js 
+// Reference from W3School
   
 let password = document.getElementById("password"); 
 let power = document.getElementById("power-point"); 

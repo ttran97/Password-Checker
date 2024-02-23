@@ -1,28 +1,34 @@
-* {
-    box-sizing: border-box;
-  }
-  
+    /* Body page */
+
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
-  
   /* Style the header */
   .header1 {
     background-color: #9a3333;
-    border: 10px solid black;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     color: white;
-  }
+    border-radius: 25px;
+}
 
   .header2 {
     background-color: #04AA6D;
-    border: 10px solid black;
     padding: 1px;
     text-align: center;
     font-size: 25px;
     color: white;
+    border-radius: 25px;
+
+  }
+
+  .border {
+    background-color: rgb(255, 255, 255);
+    border: #ffffff;
+    border-radius: 25px;
   }
   
   /* Container for flexboxes */
@@ -31,39 +37,15 @@
     display: flex;
   }
   
-  /* Style the navigation menu */
-  nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background: #ccc;
-    padding: 20px;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  /* Style the content */
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
+
   /* Style the footer */
   .footer {
-    background-color: #777;
+    background-color: #0e88e6;
     padding: 10px;
     text-align: center;
     color: white;
-    bottom:0;
-    left: 0; 
-    z-index: 10;
+    margin-top: 20px;
+    border-radius: 25px;
   }
   
   /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
@@ -73,8 +55,6 @@
       flex-direction: column;
     }
   }
-
-
   
 .group { 
     width: auto; 
@@ -159,7 +139,6 @@ input[type=submit] {
 .valid:before {
   position: relative;
   left: -35px;
-  content: "&#10004;";
 }
 
 /* Add a red text color and an "x" icon when the requirements are wrong */
@@ -170,5 +149,4 @@ input[type=submit] {
 .invalid:before {
   position: relative;
   left: -35px;
-  content: "&#10006;";
 }
