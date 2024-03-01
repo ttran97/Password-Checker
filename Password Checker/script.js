@@ -1,6 +1,20 @@
 // script.js 
 // Reference from W3School
-  
+
+// To make either hidden or show the password
+let eyeicon = document.getElementById("eyeicon");
+let password1 = document.getElementById("password"); 
+
+eyeicon.onclick = function(){ 
+  if(password.type == "password"){ 
+      password.type =  "text"; 
+      eyeicon.src = "./images/show.png";
+  } else{
+      password.type = "password"; 
+      eyeicon.src = "./images/hide.png";
+  }
+}
+
 let password = document.getElementById("password"); 
 let power = document.getElementById("power-point"); 
 password.oninput = function () { 
@@ -24,7 +38,7 @@ password.oninput = function () {
     power.style.backgroundColor = colorPower[point]; 
 };
 
-var myInput = document.getElementById("psw");
+var myInput = document.getElementById("password");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
@@ -81,3 +95,4 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
+
