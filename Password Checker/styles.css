@@ -58,7 +58,10 @@
   
 .group { 
     width: auto; 
-    text-align: center; 
+    text-align: center;
+    margin-left: 1%; 
+    margin-top: 1%;
+    margin-right: 1%
 } 
   
 .group label { 
@@ -94,13 +97,14 @@
 
 /* Style all input fields */
 input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+    border: none; 
+    outline: none; 
+    padding: 20px; 
+    width: calc(100% - 40px); 
+    border-radius: 10px; 
+    background-color: #eaeff2; 
+    color: #080911; 
+    font-size: 20px; 
 }
 
 /* Style the submit button */
@@ -111,7 +115,7 @@ input[type=submit] {
 
 /* Style the container for inputs */
 .container {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   padding: 30px;
   
 }
